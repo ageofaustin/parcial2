@@ -1,0 +1,153 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #284B63;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    color: #284B63;
+}
+
+.bar-chart h4 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #284B63;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.bar-label {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1rem;
+}
+
+#main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#main-div > button {
+    background: #81c784; /* Pastel verde */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+    margin-bottom: 1%;
+    margin-left: 60%;
+}
+
+
+
+#talbe-div {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    color: whitesmoke;
+}
+
+/* Overlay y popup */
+#addlibros-popup {
+   
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    padding: 0%;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    border-radius: 12px;
+    border-width: 0cap;
+
+   
+}
+
+#addlibros-popup.active {
+    display: flex;
+}
+
+#addlibros-popup form {
+   
+    display: flex;
+    
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    position: relative;
+
+      background: #ffffff;
+    padding: 2rem 2.5rem;
+    
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    min-width: 320px;
+}
+
+#addlibros-popup input[type="text"],
+#addlibros-popup input[type="number"],
+#addlibros-popup input[type="date"] {
+    padding: 0.7rem;
+    border: 1px solid #353535;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #D9D9D9;
+}
+
+#addlibros-popup input[type="radio"]{
+    margin-left: 25%;
+
+}
+
+#addlibros-popup input[type="submit"] {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    background: #284B63;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#addlibros-popup input[type="submit"]:hover {
+    background: #81c784;
+    color: #fff;
+}
+
+#addlibros-popup label {
+    color: #388e3c;
+    font-weight: bold;
+}
+
+#addlibros-popup .close-popup {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #a7c7e7;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+#addlibros-popup .close-popup:hover {
+    color: #388e3c;
+}
+
+#button-radio{
+    display: flex;
+   
+}
+
+#mensajeLibros{
+    text-align: center;
+  
+}

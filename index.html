@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="stylesheet" href="style/nav.css" />
+  </head>
+  <body>
+    <div id="main-div">
+      <div id="login-inputs" class="inputs-index">
+        <h3>Inicio de Sesión</h3>
+        <form action="" id="login-form">
+          <input
+            type="text"
+            id="login-username"
+            placeholder="Usuario"
+            required
+          />
+          <br />
+           <br />
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Contraseña"
+            required
+          />
+          <br /><br />
+          <input type="submit" id="login-button" value="Ingresar" />
+        </form>
+        <br />
+        <p>¿No tienes cuenta aún? <a  id="show-signin" href="#">Registrate aqui!</a></p>
+        
+      </div>
+    </div>
+<dialog id="registerDialog">
+      
+
+        <form action="" id="signin-form">
+          <h2>Registro</h2>
+          <input
+            type="text"
+            id="signin-fullname"
+            name="signin-fullname"
+            placeholder="Nombre Completo"
+            required
+          />
+          <br /><br />
+          <input
+            type="text"
+            id="signin-username"
+            name="signin-username"
+            placeholder="Usuario"
+            required
+          />
+          <br /><br />
+          <input
+            type="password"
+            id="signin-password"
+            name="signin-password"
+            placeholder="Contraseña"
+            required
+          />
+           <input
+            type="password"
+            id="repeat-signin-password"
+            name="signin-repeatpassword"
+            placeholder="Confirmar Contraseña"
+            required
+          />
+          <br /><br />
+          <input type="submit" id="signin-button" value="Registrarse" />
+          <button type="button" id="close-signin">Cancelar</button>
+        </form>
+      
+</dialog>
+    
+
+    <script type="module" src="js/index.js"></script>
+   
+  </body>
+</html>

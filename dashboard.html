@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="style/dashboard.css" />
+    <link rel="stylesheet" href="style/nav.css" />
+    <link rel="stylesheet" href="style/tabla.css" />
+  </head>
+  <body>
+    <nav>
+      <span class="navbar-title" id="nombre-Usuario"></span>
+      <div class="dropdown" id="dropdownMenu">
+        <button class="dropbtn" id="dropdownBtn">&#9776;</button>
+        <div class="dropdown-content" id="dropdownContent">
+          <a href="perfil.html">Perfil</a>
+          <a href="index.html">Cerrar Sesión</a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="main-div">
+      <button id="show-addlibros">+</button>
+      <div id="talbe-div"></div>
+      <div class="bar-chart">
+      <h4>Cantidad de libros que recomendaría vs. los que no recomendaría</h4>
+      <div class="bar-apilada">
+        <div class="bar bar-si" id="bar-si" ></div>
+        <div class="bar bar-no" ></div>
+      </div>
+      <div class="bar-labels">
+        <span class="bar-label bar-label-si"></span>
+        <span class="bar-label bar-label-no"></span>
+      </div>
+    </div>
+      <dialog id="addlibros-popup">
+        <form action="" id="addlibrosform">
+          <button type="button" class="close-popup" id="close-addlibros">
+            &times;
+          </button>
+          <input
+            type="text"
+            placeholder="Título del libro"
+            name="titulo"
+            required
+          />
+          <input type="text" placeholder="Autor" name="autor" required />
+          <input
+            type="date"
+            placeholder="Fecha de lectura"
+            name="fecha"
+            required
+          />
+          <input
+            type="number"
+            placeholder="Número de páginas"
+            name="numpags"
+            required
+          />
+          <label>¿Lo recomendaría?</label>
+          <div id="button-radio">
+            <input
+              type="radio"
+              name="recomendado"
+              value="Si"
+              id="si"
+              required
+            />
+            <label for="si">Sí</label>
+            <input
+              type="radio"
+              name="recomendado"
+              value="No"
+              id="no"
+              required
+            />
+            <label for="no">No</label>
+          </div>
+
+          <input type="submit" value="Agregar" />
+        </form>
+      </dialog>
+    </div>
+  </body>
+  <script type="module" src="js/dashboard.js"></script>
+</html>

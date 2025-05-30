@@ -1,0 +1,140 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #284B63;
+    margin: 0;
+    padding: 0;
+    font-size: 1.05rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: bold;
+    color: #284B63;
+}
+
+#main-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+    gap: 2rem;
+}
+
+#nombre-div, #Contraseña {
+    background: #fff7f174;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#nombre-div input[type="text"] {
+    border: 1px solid #3C6E71;
+    border-radius: 5px;
+    padding: 0.6rem;
+    font-size: 1rem;
+    background: #fff;
+    color: #444;
+}
+
+#nombre-div button,
+#Contraseña button {
+    background: #81c784;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#nombre-div button:hover,
+#Contraseña button:hover {
+    background: #388e3c;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(167, 199, 231, 0.3);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.overlay.active {
+    display: flex;
+}
+
+.popup {
+    background: #ffffff;
+    padding:0;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    min-width: 300px;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    position: relative;
+    border-width: 0cap;
+
+}
+
+.popup input[type="password"] {
+    padding: 0.7rem;
+    border: 1px solid #353535;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #D9D9D9;
+}
+
+.popup input[type="text"] {
+    padding: 0.7rem;
+    border: 1px solid #353535;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #D9D9D9;
+}
+
+#nombre-div input[id="nombreActual"] {
+  cursor: auto;
+}
+
+.popup input[type="submit"] {
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    background: #284B63;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.popup input[type="submit"]:hover {
+    background: #81c784;
+    color: #fff;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    color: #284B63;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.close-btn:hover {
+    color: red;
+}
+
+form {
+    padding: 5%;
+}
